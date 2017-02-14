@@ -1,0 +1,12 @@
+<div class = "container">
+  <div class = "article text-center">
+    <h1><%= @article.title %></h1>
+    <p><%= @article.content %></p>
+  </div>
+  <div class = "text-center actions">
+      <p class = "links"><%= link_to "Edit article", edit_article_path %></p>
+      <p class = "links"><%= link_to "Delete article", article_path(@article), :confirm => "Are you sure?", :method => :delete %></p>
+  </div>
+
+  </div>
+</div>
